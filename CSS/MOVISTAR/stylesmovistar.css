@@ -1,66 +1,92 @@
 /* General*/
 * {
   padding: 0;
-  margin: 5px;
+  margin: 0;
   font-family: "Montserrat", sans-serif;
   color: gray;
+  box-sizing: border-box;
 }
 body {
   background: rgb(32, 30, 39);
   background: linear-gradient(
     to bottom,
     #67bee9 0%,
-    #f7f7f7 0%,
-    #f5f6f7 0%,
-    #f7fafc 0%,
-    #f2f5f8 0%,
-    #f4f5f7 0%,
-    #f6f8fa 0%,
-    #f8fbfd 0%
+    #f7f7f7 2%,
+    #f5f6f7 20%,
+    #f7fafc 30%,
+    #f2f5f8 40%,
+    #f4f5f7 60%,
+    #f6f8fa 80%,
+    #f8fbfd 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
-/* estilos internet*/
-#header {
-  margin: auto;
-  font-family: "Montserrat", sans-serif;
-  color: gray;
+
+header {
+  padding: 1rem 0;
 }
 ul, 
 ol {
   list-style: none;
 }
-/*Nav*/
 /* Navegador internet*/
-nav li a {
-  color: grey;
-  list-style: none;
+.menu-container {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
 }
-.nav li a {
+
+.links{
+  display: flex;
+  gap: 1rem;
+}
+
+.menu{
+  display: flex;
+  position: relative;
+}
+.opcion a {
   background-color: rgb(232, 240, 250);
+  height: 2rem;
   color: rgb(39, 39, 39);
   text-decoration: none;
-  padding: 10px 15px;
-  display: block;
+  border-radius: 1rem;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer p {
   align-items: center;
   padding: 0;
   margin: 5px;
 }
-.nav li a:hover {
+.opcion a:hover {
   background-color: rgb(55, 178, 235);
 }
-.nav > li {
-  float: left;
-}
-.nav li ul {
+.opcion ul {
   display: none;
-  position: sticky;
+  position: absolute;
+  top: 2rem;
   min-width: 140px;
 }
-.nav li:hover > ul {
+.opcion:hover > ul {
+  animation-name: visualizar;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
   display: block;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
 }
+
+@keyframes visualizar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .nav li ul li {
   position:sticky;
 }
@@ -71,27 +97,27 @@ nav li a {
 /* Navegador curso*/
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 12px 20px;
   color: rgb(39, 38, 38);
   font-weight: 300;
 }
-nav div p {
+nav p {
   font-size: 20px;
   display: flex;
   align-items: center;
   font-family: "Montserrat", sans-serif;
   gap: 22px;
 }
-nav div {
+nav {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 button {
-  background-color: rgb(241, 231, 231);
-  color: rgb(39, 39, 39);
+  background-color: rgb(92, 177, 247);
+  color: rgb(241, 243, 245);
+  outline: 2px rgb(169, 219, 245) solid;
   font-weight: 900;
   padding: 6px 12px;
   border-radius: 120px;
@@ -99,29 +125,36 @@ button {
   cursor: pointer;
   transition: background-color 1s, color 1s, outline 1s;
 }
-button {
-  background-color: rgb(92, 177, 247);
-  color: rgb(241, 243, 245);
-  outline: 2px rgb(169, 219, 245) solid;
-}
-nav div p,
-nav div img {
+nav p,
+.Planes > p {
   cursor: pointer;
   color: gray;
   font-weight: 400;
-  transition: text-decoration 1s, font-weight 1s;
+  transition: all 1s;
   align-items: center;
 }
-nav div p:hover {
+.Planes p:hover {
   text-decoration: underline;
-  font-weight: 900;
+  color: #21536c;
 }
+
+.columna{
+  width: 100%;
+}
+.columna > img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
 /*Section*/
-main section .columna {
+.inicio {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20pz;
-  padding: 0 1px;
+  gap: 12px;
+  padding: 1rem 0;
   color: rgb(22, 22, 22);
   text-align: center;
 }
@@ -139,8 +172,14 @@ main section .columna {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem 0;
   gap: 28px;
   text-align: center;
+}
+
+.Planes {
+  display: flex;
+  gap: 12px;
 }
 #contáctanos{
   display: flex;
@@ -149,4 +188,5 @@ main section .columna {
   align-items: center;
   gap: 28px;
   text-align: center;
+  padding: 2rem 0;
 }
