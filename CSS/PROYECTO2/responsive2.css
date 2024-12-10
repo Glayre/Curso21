@@ -1,0 +1,28 @@
+h1 {
+text-align: center;
+font-size: 2rem;
+color: blueviolet;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2 rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .menu, .menu-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0.3;
+        margin: 0;
+        gap: 0 rem;
+        padding: 1rem;
+        flex-direction: column;
+        
+    }

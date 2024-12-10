@@ -1,0 +1,33 @@
+.img {
+    font-size: 10px;
+    text-align: center;
+    padding: 24px 12px;
+    margin: 24px;
+    border: 32px dotted blue;
+    border-style: double;
+    border-radius: 25% 25% 25% 100px;
+    display: flex; 
+    width: 2rem;
+    height: 2remm
+}
+
+
+.menu {
+    position: fixed;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(28, 10, 77);
+    color: rgb(241, 241, 245);
+    padding: 12px;
+    color: white;
+
+}
+
+.ul {
+height: 300px;
+flex-direction: row;
+justify-content: center;
+background-color: green;
+}
+

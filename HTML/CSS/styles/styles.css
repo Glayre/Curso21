@@ -1,0 +1,49 @@
+ul {
+    color: rgb(41, 26, 125);
+  } 
+
+.item {
+  background-color: blue;
+  color:white
+}
+
+
+
+
+.body {
+    background-color: color(black);
+    color: white;
+    
+}
+
+.html {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+  width: 80vw;
+  min-width: 400px;
+  max-width: 800px;
+  height: 100vh;
+  background-color: blueviolet;
+  background-image: url("https://i.pinimg.com/originals/fb/6d/16/fb6d16c4321ab45dad1c6290f2740f7a.jpg");
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(4,131,201,1) 74%, rgba(0,212,255,1) 100%);;
+  color: brown;
+  font-size: 32px;
+  text-align: center;
+  padding: 24px 12px;
+  margin: 24px;
+  border: 32px dotted blue;
+  border-style: double;
+  border-radius: 25% 25% 25% 100px;
+  display: flex; 
+}
+
+  .main:hover {
+    background-color: brown;
+    padding: 200px;
+    cursor: copy;
+
+
+
+  }

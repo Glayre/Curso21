@@ -1,0 +1,16 @@
+:root{
+    --c1: #0055b8;
+    --c2: #f0ba10;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+a {
+    text-decotation: none;
+    color: inherit;
+}
+    

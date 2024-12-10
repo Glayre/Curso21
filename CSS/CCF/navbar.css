@@ -1,0 +1,33 @@
+/* referente a la barra de navegacion
+/* parte superior de mi barra de navegacion */
+
+.logo-navegacion {
+    background-color: var(--c1);
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.logo-navegacion img {
+    fill: #fff;
+    color: #fff;
+    
+}
+
+.paginas {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    list-style-type: none;
+    font-size: x-small;
+    background-color: var(--c2);
+    gap: 0.5rem;
+}
+
+.paginas li a:hover {
+    color: var(--c1);
+
+}
+/*...Parte final de la barra de navegacion
