@@ -1,0 +1,117 @@
+///import css-variables from 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+    
+$color-principal:  rgba(85,85,134,1)
+$color-secundario: rgba(2,0,36,1)
+$color-terciario:  rgba(76,119,190,1) 
+$color-cuarto: rgba(130,163,194,1)
+
+
+
+@mixin boton
+  background-color: $color-terciario
+  color: $color-cuarto
+  padding:1rem
+  border-radius:1rem 
+
+
+@mixin center($direction: row)  
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: $direction
+
+@mixin formato ($letra:2rem, $redondo:1rem)
+  font-size: $letra
+  border: 1px solid rgb(19, 19, 33)
+  border-radius: $redondo
+
+
+
+nav 
+  background-color: $color-secundario
+  padding: 1rem
+  border-radius: 0 0 3rem 3rem
+  ul
+    @include center(row)
+    list-style-type: none
+    gap: 1.1rem
+    justify-content: space-around
+    a
+      color: white
+      text-decoration: none
+    li
+      background-color: $color-terciario
+      padding: 0.5rem 1rem
+      border-radius: 1rem
+
+    
+body
+  background: rgb(2,0,36)
+  background: linear-gradient(59deg, rgba(2,0,36,1) 0%, rgba(85,85,134,1) 19%, rgba(76,119,190,1) 54%, rgba(130,163,194,1) 92%)
+  padding: 0
+  margin: 0
+
+h1
+  color: blue
+  text-align: center
+
+h3
+  color: white
+  text-align: center
+
+p
+  color: white
+  text-align: center
+  
+h2
+  color: blue
+  text-align: center 
+
+li
+  color: white
+  text-align: justify
+
+div
+  @include center
+  color: $color-principal
+  background-color: transparent
+
+
+.seccion
+  background-color: transparent
+  color: $color-secundario
+  
+  @include center(column)
+  padding: 0.5rem
+  gap: 1rem
+  
+
+  h1
+    @include formato 
+    
+      
+  h3
+    @include formato (1.5rem,2rem)
+    
+  p 
+    @include formato (1.5rem)
+
+  ul
+    list-style: none
+    padding: 0rem
+  li
+    font-size: 1.2rem
+    border: 10px solid black
+  button
+    @include boton
+
+footer
+  display: flex
+  justify-content: center
+  align-items: center
+
+//ciclo for
+  
+

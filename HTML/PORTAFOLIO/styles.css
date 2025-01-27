@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+nav {
+  background-color: rgb(2, 0, 36);
+  padding: 1rem;
+  border-radius: 0 0 3rem 3rem;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 1.1rem;
+  justify-content: space-around;
+}
+nav ul a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li {
+  background-color: rgb(76, 119, 190);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(59deg, rgb(2, 0, 36) 0%, rgb(85, 85, 134) 19%, rgb(76, 119, 190) 54%, rgb(130, 163, 194) 92%);
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: blue;
+  text-align: center;
+}
+
+li {
+  color: white;
+  text-align: justify;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: rgb(85, 85, 134);
+  background-color: transparent;
+}
+
+.seccion {
+  background-color: transparent;
+  color: rgb(2, 0, 36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+.seccion h1 {
+  font-size: 2rem;
+  border: 1px solid rgb(19, 19, 33);
+  border-radius: 1rem;
+}
+.seccion h3 {
+  font-size: 1.5rem;
+  border: 1px solid rgb(19, 19, 33);
+  border-radius: 2rem;
+}
+.seccion p {
+  font-size: 1.5rem;
+  border: 1px solid rgb(19, 19, 33);
+  border-radius: 1rem;
+}
+.seccion ul {
+  list-style: none;
+  padding: 0rem;
+}
+.seccion li {
+  font-size: 1.2rem;
+  border: 10px solid black;
+}
+.seccion button {
+  background-color: rgb(76, 119, 190);
+  color: rgb(130, 163, 194);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=styles.css.map */

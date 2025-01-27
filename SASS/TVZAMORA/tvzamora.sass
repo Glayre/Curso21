@@ -1,0 +1,47 @@
+@use "variables"
+@use "mixins" as *
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    
+.logo-navegacion
+    background-color: variables.$color_principal
+            
+.logo-navegacion img
+    display: flex
+    align-items: center
+
+.menu-container
+    padding: 0 0.5rem
+
+
+.icono
+    width: 32px
+    height: 32px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 2rem
+    
+.navbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1.5rem 0.5rem
+
+
+.menunav
+    display: flex
+    justify-content: center
+    align-items: center    
+    gap: 1rem
+    padding: 0 1rem
+    list-style-type: none
+    font-size: x-small
+    color:#495057
+    
+body
+   box-sizing: border-box
+   background-color: variables.$color_principal
+

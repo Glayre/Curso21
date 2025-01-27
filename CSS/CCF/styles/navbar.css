@@ -1,0 +1,85 @@
+/* referente a la barra de navegacion*/
+
+
+.nav {
+    position: sticky;
+    top: 0;
+}
+
+/* parte superior de mi barra de navegacion*/
+
+.nav-logo {
+    background-color: var(--c1);
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+/*.mav-logo-navegacion img {
+    fill: #fff;
+    color: #fff;
+    
+}*/
+
+.paginas {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    list-style-type: none;
+    font-size: x-small;
+    background-color: var(--c2);
+    gap: 0.5rem;
+}
+
+.paginas li a:hover {
+    color: var(--c1);
+
+}
+/*...Parte final de la barra de navegacion*/
+/*Inicio: menu desplegable*/
+
+.menu-desplegable, .menu-desplegable-superior, .menu-desplegable-inferior {
+    display: flex;
+    flex-direction: column;
+}
+.menu-desplegable {
+    padding: 1.2rem;
+    height: 60vh;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.menu-desplegable-superior  {
+    padding: 0rem 1 rem;
+    text-align: center;
+    gap: 1 rem;
+
+}
+
+.menu-desplegable-inferior {
+    align-items: center;
+    padding: 0rem 1 rem;
+    text-align: center;
+    gap: 1 rem;
+    font-weight: 600;
+    }
+
+.azul {
+    color: var(--c1);
+}
+
+.boton-inter {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    background-color: var(--c1);
+    color: white;
+
+
+}
+/*Final: menu desplegable*/

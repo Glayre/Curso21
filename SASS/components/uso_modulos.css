@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(85, 85, 134);
+  padding: 3rem;
+}
+
+h1 {
+  background-color: rgb(76, 119, 190);
+  color: rgb(130, 163, 194);
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgb(2, 0, 36);
+  border: 1px solid #281b1b;
+}
+
+p {
+  background-color: white;
+  color: green;
+  padding: 1.2rem;
+  border: 2px solid green;
+}/*# sourceMappingURL=uso_modulos.css.map */

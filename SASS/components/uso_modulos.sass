@@ -1,0 +1,21 @@
+@use "variables"
+@use "mixins" as *
+@use "variables2" as var
+
+body
+    background-color: variables.$color_principal
+    padding: 3rem
+     
+h1
+    @include *.base
+    background-color: variables.$color_secundario
+    border: 2px solid #281b1b
+
+p
+    background-color: white
+    color: var.$color_principal
+    padding: var.$padding
+    border: 2px solid green
+
+
+

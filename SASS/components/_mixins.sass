@@ -1,0 +1,30 @@
+@use "variables" as * //importamos el archivo variables.sass
+    
+@mixin base
+ background-color: $color-terciario
+ color: $color-cuarto
+ padding: 1rem
+ border-radius: 1rem 
+
+@mixin alinear($direction, $gap:1rem)
+ display: flex
+ justify-content: center
+ align-items: center
+ flex-direction: $direction
+
+@mixin boton
+  background-color: $color-terciario
+  color: $color-cuarto
+  padding: 1rem
+  border-radius: 1rem 
+
+@mixin center($direction: row)  
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: $direction
+
+@mixin formato ($letra:2rem, $redondo:1rem)
+  font-size: $letra
+  border: 1px solid rgb(19, 19, 33)
+  border-radius: $redondo
