@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0 rem;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #cb232c, #ce1d61);
+  background-size: cover;
+}
+
+
+.container-form {
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+  height: 500px;
+  max-width: 900px;
+  transition: all 1s ease;
+  margin: 10px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  text-align: center;
+  padding: 20px 25px;
+  box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+}
+
+form .title {
+  color: #252525;
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+form label {
+  margin-bottom: 35px;
+}
+
+form label .fa-solid {
+  font-size: 20px;
+  color: #cb232c;
+  margin-right: 10px;
+}
+
+form label input {
+  outline: none;
+  border: none;
+  color: #252525;
+  border-bottom: solid 1px #ce1d61;
+  padding: 0 5px;
+  font-size: 18px;
+}
+
+form label input::placeholder {
+  color: rgba(37, 37, 37, 0.5);
+}
+
+
+form .link {
+  color: #252525;
+  margin-bottom: 15px;
+}
+
+form button {
+  color: #fff;
+  border: none;
+  background: linear-gradient(to right, #cb232c, #ce1d61);
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+
+
+.information {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #c7eef3;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.info-childs {
+  width: 100%;
+  padding: 0 30px;
+}
+
+.info-childs h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.info-childs p {
+  margin: 15px 0 ;
+  color: #555;
+}
+
+.info-childs input {
+  background-color: transparent;
+  outline: none;
+  border: solid 2px #9191bd;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #9191bd;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+

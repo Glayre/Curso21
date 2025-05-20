@@ -1,0 +1,36 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Semáforo</title>  
+    <style>  
+        #circle {  
+            width: 100px;  
+            height: 100px;  
+            border-radius: 50%;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div id="circle"></div>  
+    <script>  
+        function setColor(color) {  
+            document.getElementById("circle").style.backgroundColor = color;  
+        }  
+        function startWork() {  
+            setColor("green");  
+            setTimeout(() => {  
+                setColor("yellow");  
+                setTimeout(() => {  
+                    setColor("red");  
+                    setTimeout(() => {  
+                        startWork();  
+                    }, 4000);  
+                }, 3000);  
+            }, 2000);  
+        }  
+        startWork();  
+    </script>  
+</body>  
+</html>  
