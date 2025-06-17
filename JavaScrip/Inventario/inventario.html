@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Inventario</title>
+  <link rel="stylesheet" href="inventario.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gestión de Inventario</h1>
+    <form id="productForm">
+      <input type="text" id="nombre" placeholder="Nombre del Producto" required>
+      <input type="text" id="descripcion" placeholder="Descripción" required>
+      <input type="text" id="categoria" placeholder="Categoría" required>
+      <input type="text" id="subcategoria" placeholder="Subcategoría">
+      <input type="text" id="marca" placeholder="Marca">
+      <input type="text" id="modelo" placeholder="Modelo">
+      <input type="number" id="precioCompra" placeholder="Precio de Compra" step="any" required>
+      <input type="number" id="precioVenta" placeholder="Precio de Venta" step="any" required>
+      <input type="number" id="costoEnvio" placeholder="Costo de Envío" step="any">
+      <input type="number" id="cantidadStock" placeholder="Cantidad en Stock" required>
+      <input type="number" id="cantidadMinima" placeholder="Cantidad Mínima">
+      <input type="text" id="proveedor" placeholder="Proveedor">
+      <input type="date" id="fechaIngreso" required>
+      <input type="date" id="fechaVencimiento">
+      <input type="number" id="peso" placeholder="Peso (kg)" step="any">
+      <input type="number" id="largo" placeholder="Largo (cm)" step="any">
+      <input type="number" id="ancho" placeholder="Ancho (cm)" step="any">
+      <input type="number" id="alto" placeholder="Alto (cm)" step="any">
+      <input type="text" id="color" placeholder="Color">
+      <input type="text" id="material" placeholder="Material">
+      <input type="text" id="codigoBarras" placeholder="Código de Barras">
+      <input type="file" id="imagenes" accept="image/*">
+      <input type="number" id="capacidad" placeholder="Capacidad">
+      <input type="number" id="voltaje" placeholder="Voltaje">
+      <select id="estado">
+          <option value="Activo">Activo</option>
+          <option value="Inactivo">Inactivo</option>
+      </select>
+      <input type="text" id="tags" placeholder="Tags (separadas por comas)">
+      <textarea id="notas" placeholder="Notas adicionales"></textarea>
+      <button type="submit">Agregar Producto</button>
+    </form>
+    <table id="productTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Categoría</th>
+          <th>Subcategoría</th>
+          <th>Marca</th>
+          <th>Modelo</th>
+          <th>Precio Compra</th>
+          <th>Precio Venta</th>
+          <th>Costo Envío</th>
+          <th>Cantidad Stock</th>
+          <th>Proveedor</th>
+          <th>Fecha Ingreso</th>
+          <th>Fecha Vencimiento</th>
+          <th>Peso</th>
+          <th>Dimensiones</th>
+          <th>Color</th>
+          <th>Material</th>
+          <th>Código de Barras</th>
+          <th>Imagen</th>
+          <th>Capacidad</th>
+          <th>Voltaje</th>
+          <th>Estado</th>
+          <th>Tags</th>
+          <th>Notas</th>
+          <th>Acciones</th>
+        </tr>
+        </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="inventario.js"></script>
+</body>
+</html>

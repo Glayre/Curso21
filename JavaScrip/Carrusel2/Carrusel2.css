@@ -1,0 +1,190 @@
+/**
+ * @file styles.css
+ * @description Estilos para el carrusel de imágenes con efecto 3D y diseño responsivo
+ */
+
+/* ================================
+   ESTILOS GENERALES
+   ================================ */
+/**
+ * @param {linear-gradient} background - Fondo con efecto gradiente para mejor apariencia.
+ * @param {font-family} font-family - Define la fuente utilizada en toda la página.
+ * @param {display} display - Asegura que el contenido esté centrado en pantalla.
+ * @param {height} height - Ocupa toda la pantalla para el diseño completo.
+ */
+body {
+  background: linear-gradient(to right, #141E30, #243B55);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* ================================
+  CONTENEDOR DEL CARRUSEL
+   ================================ */
+/**
+ * @param {display} display - Usa flexbox para centrar los elementos.
+ * @param {position} position - Define una posición relativa para estructurar el carrusel.
+ * @param {overflow} overflow - Evita que el contenido sobrepase el área del carrusel.
+ */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* ================================
+  CONTENEDOR DE IMÁGENES
+   ================================ */
+/**
+ * @param {display} display - Usa flexbox para organizar las imágenes.
+ * @param {transition} transition - Aplica una animación suave al cambiar imágenes.
+ * @param {perspective} perspective - Agrega profundidad para mejorar el efecto 3D.
+ */
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  perspective: 1200px;
+}
+
+/* ================================
+  CONFIGURACIÓN DE LAS IMÁGENES
+   ================================ */
+/**
+ * @param {text-align} text-align - Centra el contenido del carrusel.
+ * @param {display} display - Por defecto oculta todas las imágenes.
+ */
+.carousel-item {
+  text-align: center;
+  display: none;
+}
+
+/**
+ * @param {boolean} active - Define si la imagen es visible o no.
+ */
+.carousel-item.active {
+  display: block;
+}
+
+/**
+ * @param {number} width - Controla el ancho de la imagen.
+ * @param {number} max-width - Establece el tamaño máximo de la imagen.
+ * @param {border-radius} border-radius - Define los bordes redondeados.
+ * @param {box-shadow} box-shadow - Agrega sombra para resaltar la imagen.
+ * @param {transform} transform - Aplica efecto de rotación en perspectiva.
+ */
+.carousel-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  transform: rotateY(15deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+/**
+ * Ajuste del efecto de rotación en la imagen activa.
+ */
+.carousel-item.active .carousel-image {
+  transform: rotateY(0deg);
+}
+
+/* ================================
+  TEXTO DEBAJO DE LAS IMÁGENES
+   ================================ */
+/**
+ * @param {string} color - Define el color del texto debajo de las imágenes.
+ * @param {string} background - Fondo semitransparente para mejorar la visibilidad.
+ * @param {padding} padding - Espaciado interno para mejorar la apariencia.
+ */
+.image-caption {
+  font-size: 18px;
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* ================================
+  BOTONES DE NAVEGACIÓN
+   ================================ */
+/**
+ * @param {position} position - Ubica los botones sobre las imágenes.
+ * @param {background} background - Color vibrante para mayor visibilidad.
+ * @param {border-radius} border-radius - Bordes redondeados para mejor UX.
+ * @param {cursor} cursor - Cambia el cursor a pointer indicando interacción.
+ */
+button {
+  position: absolute;
+  background: #FF5733;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  transition: 0.3s ease;
+}
+
+/**
+ * Cambio de color cuando el usuario pasa el ratón sobre el botón.
+ */
+button:hover {
+  background: #C70039;
+}
+
+/* ================================
+  POSICIONAMIENTO DE BOTONES
+   ================================ */
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+/* ================================
+  ESTILOS RESPONSIVOS PARA MÓVILES
+   ================================ */
+/**
+ * Ajustes para pantallas pequeñas (hasta 768px de ancho).
+ */
+@media (max-width: 768px) {
+  .carousel-image {
+        max-width: 90%;
+  }
+
+  .image-caption {
+        font-size: 16px;
+        padding: 4px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+}
+
+/**
+ * Ajustes adicionales para pantallas muy pequeñas (hasta 480px de ancho).
+ */
+@media (max-width: 480px) {
+  .image-caption {
+    font-size: 14px;
+    padding: 3px;
+}
+
+  button {
+    font-size: 18px;
+    padding: 6px 12px;
+  }
+}

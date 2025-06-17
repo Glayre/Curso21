@@ -1,0 +1,155 @@
+/**
+ * @file styles.css
+ * @description Estilos mejorados para el carrusel con fondo semitransparente y efecto 3D.
+ */
+
+/* ================================
+   ESTILOS GENERALES
+   ================================ */
+body {
+  background: linear-gradient(to right, #141E30, #243B55); /* Fondo de la página */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* ================================
+  CONTENEDOR DEL CARRUSEL 
+   ================================ */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+    
+  /* Fondo semitransparente con efecto Glassmorphism */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ================================
+  CONTENEDOR DE IMÁGENES
+   ================================ */
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  perspective: 1200px;
+}
+
+/* ================================
+  CONFIGURACIÓN DE LAS IMÁGENES
+   ================================ */
+.carousel-item {
+  text-align: center;
+  display: none;
+}
+
+/* Imagen activa */
+.carousel-item.active {
+  display: block;
+}
+
+/* Estilos de las imágenes con efecto 3D */
+.carousel-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  transform: rotateY(15deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Imagen activa con efecto 3D */
+.carousel-item.active .carousel-image {
+  transform: rotateY(0deg);
+}
+
+/* ================================
+   TEXTO DEBAJO DE LAS IMÁGENES
+   ================================ */
+.image-caption {
+  font-size: 18px;
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* ================================
+  BOTONES DE NAVEGACIÓN
+   ================================ */
+button {
+  position: absolute;
+  background: #FF5733;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  transition: 0.3s ease;
+}
+
+/* Efecto hover en botones */
+button:hover {
+  background: #C70039;
+}
+
+/* Posicionamiento de los botones */
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+/* ================================
+  ESTILOS RESPONSIVOS PARA MÓVILES
+   ================================ */
+@media (max-width: 768px) {
+  .carousel-image {
+    max-width: 90%;
+  }
+
+  .image-caption {
+    font-size: 16px;
+    padding: 4px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+
+  #prevBtn {
+    left: 5px;
+  }
+
+  #nextBtn {
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-caption {
+    font-size: 14px;
+    padding: 3px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 6px 12px;
+  }
+}
