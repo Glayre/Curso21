@@ -41,4 +41,3 @@ while True:
 """
   Realiza un TO DO List en Python. Donde puedas agregar, eliminar y ver tareas.
 """
-
