@@ -3,7 +3,7 @@ import { loadEnv } from '../config/env.js';
 
 loadEnv();
 
-const uri = process.env.MONGO_URI || 'mongodb://localhost:27017/cavenet';
+const uri = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/cavenet';
 mongoose.set('strictQuery', true);
 
 mongoose
