@@ -1,4 +1,3 @@
-// src/api/routes/index.route.js
 import { Router } from 'express';
 import authRoutes from './auth.route.js';
 import planRoutes from './plan.route.js';

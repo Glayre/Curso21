@@ -1,4 +1,3 @@
-// src/api/routes/plan.route.js
 import { Router } from 'express';
 import * as controller from '../controllers/plan.controller.js';
 import authMiddleware from '../middleware/auth.middleware.js';

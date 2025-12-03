@@ -1,4 +1,3 @@
-// src/api/routes/auth.routes.js
 import { Router } from 'express';
 import * as controller from '../controllers/auth.controller.js';
 

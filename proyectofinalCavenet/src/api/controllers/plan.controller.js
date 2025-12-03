@@ -1,4 +1,3 @@
-// src/api/controllers/plan.controller.js
 import Plan from '../models/plan.model.js';
 
 export async function getPlans(req, res, next) {

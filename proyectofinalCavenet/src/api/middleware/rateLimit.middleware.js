@@ -1,4 +1,3 @@
-// src/api/middleware/rateLimit.middleware.js
 import rateLimit from 'express-rate-limit';
 
 const limiter = rateLimit({

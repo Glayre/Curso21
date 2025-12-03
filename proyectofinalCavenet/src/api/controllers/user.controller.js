@@ -1,4 +1,3 @@
-// src/api/controllers/user.controller.js
 import User from '../models/user.model.js';
 
 export async function getUsers(req, res, next) {
